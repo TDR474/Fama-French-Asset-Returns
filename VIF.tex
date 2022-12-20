@@ -1,0 +1,26 @@
+
+\begin{table}[!h]
+
+\caption{Variance Inflation Factors}
+\centering
+\begin{threeparttable}
+\begin{tabular}[t]{lrrr}
+\toprule
+  & GVIF & Df & GVIF\textasciicircum{}(1/(2*Df))\\
+\midrule
+\cellcolor{gray!6}{Market\_Cap} & \cellcolor{gray!6}{1.129371} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1.062719}\\
+Book\_to\_Market & 1.230575 & 1 & 1.109313\\
+\cellcolor{gray!6}{Shares\_Turnover} & \cellcolor{gray!6}{1.119235} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1.057939}\\
+Accrual & 1.197417 & 1 & 1.094265\\
+\cellcolor{gray!6}{FF\_Market\_Beta} & \cellcolor{gray!6}{1.019088} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1.009499}\\
+\addlinespace
+SPGlobalESGScore & 1.085847 & 1 & 1.042040\\
+\cellcolor{gray!6}{Industry} & \cellcolor{gray!6}{1.539045} & \cellcolor{gray!6}{10} & \cellcolor{gray!6}{1.021792}\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes} 
+\item \\
+\item \textit{Note: } GVIF$^{[1/(2*Df)]}$ threshold is $10^{[1/(2*Df)]}$, which is 1.122 and 3.162, for $Df = 1$ and $Df= 10$, respectively
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
